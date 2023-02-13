@@ -10,14 +10,16 @@ myWatchListMovies.forEach(movie => {
                 <div>
                     <div class="child-movie-card">
                         <h2 class="movie-title">${Title}</h2 >
-                        <p class="rating">${imdbRating}</p>
+                        <p class="rating">
+                        <img width="20px" src="/img/star.png"/>
+                        ${imdbRating}</p>
                     </div>
     
                     <div class="child-movie-card">
                         <p class="runtime">${Runtime}</p>
                         <p class="genre">${Genre}</p>
                         <button data-id="${imdbID}" class="remove-from-watchlist-btn" id="remove-from-watchlist-btn">
-                        <img src="img/minus-icon.svg"/>
+                        <img src="/img/minus-icon.svg"/>
                         Watchlist </button>
                     </div>
     
