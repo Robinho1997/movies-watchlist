@@ -1,0 +1,167 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;800&display=swap');
+
+
+body {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', sans-serif;
+    background: #000000;  
+    background: -webkit-linear-gradient(to right, #434343, #000000);  
+    background: linear-gradient(to right, #434343, #000000); 
+    
+
+}
+
+
+
+/**
+*! Header Styles here
+**/
+
+header {  
+   background-color: rgb(181, 180, 180);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    color: white;
+    background-image: url(img/background.jpg);
+    
+}
+
+header h1 {
+    font-size:  43px;
+}
+
+@media(max-width:700px) {
+    header h1 {
+        font-size: 20px;
+    }
+}
+
+header a { 
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+
+/**
+*! Search bar styles here
+**/
+
+#search-bar {
+    width: 70%;
+    margin: 0 auto;
+    margin-top: 50px;
+    white-space: nowrap;
+    margin-top: -30px;
+}
+
+#search-bar * {
+    padding-block: 20px;
+    border: none;
+}
+
+#search-bar input {
+    background-color: #4B4B4B;
+    padding-left: 20px;
+    color: #A5A5A5;
+    width: 70%;
+    border-top-left-radius: 6px;
+    border-bottom-left-radius: 6px;
+    outline: none;
+  
+}
+
+#search-bar button {
+    background-color: gray;
+    color: white;
+    width: 25%;
+    margin-left: -10px;
+    border-top-right-radius: 6px;
+    border-bottom-right-radius: 6px;   
+    cursor: pointer;
+}
+
+
+.placeholder {
+    
+    color: white;
+    margin-top: 15%;
+}
+
+/**
+*! Searched Movies styles here
+**/
+
+#movie-list {
+    margin-top: 100px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    justify-content: center;
+    align-items: center;
+}
+
+.movie-card {
+    display: flex;
+    gap: 20px;
+    width: 60%;  
+}
+
+hr {
+    width: 60%;
+}
+
+.child-movie-card {
+    display: flex;
+    gap: 50px;
+    align-items: center;  
+}
+
+.movie-title {
+    font-size: 28px;
+    font-weight: normal;
+    color: white;
+   
+}
+
+.rating {
+    color: white;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.runtime, .genre, .add-to-watchlist-btn {
+    font-size: 15px;
+    color: white;
+}
+
+.add-to-watchlist-btn {
+    background-color: #121212;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.remove-from-watchlist-btn {
+    background-color: #121212;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    color: white;
+}
+
+
+.movie-plot {
+    font-size: 20px;
+    color: #A5A5A5;
+}
+
+
