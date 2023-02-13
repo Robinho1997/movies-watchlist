@@ -7,7 +7,7 @@ let movieWatchList = []
 
 searchMovieBtn.addEventListener("click", function() {
     let movieTitle = inputMovieName.value
-    fetch(`http://www.omdbapi.com/?apikey=3b7419ee&t=${movieTitle}`)
+    fetch(`https://www.omdbapi.com/?apikey=3b7419ee&t=${movieTitle}`)
         .then(response => response.json())
         .then(data => {
            movie = data
